@@ -4,7 +4,7 @@ SAVE_DIR        : 'output'         # output folder name used for saving the mode
 MODEL:                                    
   NAME          : SFNet                                           # name of the model you are using
   BACKBONE      : ResNetD-18                                                # model variant
-  PRETRAINED    : 'checkpoints/railsem19_cityscapes_mapillary_epoch_252_mean-iou_0.68545.pth'              # backbone model's weight 
+  PRETRAINED    : '/home/stanik/repos/SFSegNets-3/SFSegNets-2/pretrained_models/railsem19_sfnet_resnet18_mean-iu_0.75268.pth'              # backbone model's weight 
 
 DATASET:
   NAME          : RailSem19                                          # dataset name to be trained with (camvid, cityscapes, ade20k)
@@ -36,7 +36,7 @@ SCHEDULER:
   
 
 EVAL:
-  MODEL_PATH    : 'checkpoints/pretrained/railsem19_cityscapes_mapillary_epoch_252_mean-iou_0.68545.pth'     # trained model file path
+  MODEL_PATH    : '/home/stanik/repos/SFSegNets-3/SFSegNets-2/pretrained_models/railsem19_sfnet_resnet18_mean-iu_0.75268.pth'     # trained model file path
   IMAGE_SIZE    : [1920, 1080]                            # evaluation image size in (h, w)                       
   MSF: 
     ENABLE      : false                                   # multi-scale and flip evaluation  
@@ -45,7 +45,7 @@ EVAL:
 
 
 TEST:
-  MODEL_PATH    : 'checkpoints/pretrained/railsem19_cityscapes_mapillary_epoch_252_mean-iou_0.68545.pth'    # trained model file path
+  MODEL_PATH    : '/home/stanik/repos/SFSegNets-3/SFSegNets-2/pretrained_models/railsem19_sfnet_resnet18_mean-iu_0.75268.pth'    # trained model file path
   FILE          : 'assests/cityscapes'                    # filename or foldername 
   IMAGE_SIZE    : [1920, 1080]                            # inference image size in (h, w)
   OVERLAY       : true                                    # save the overlay result (image_alpha+label_alpha)
