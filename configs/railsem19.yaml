@@ -8,7 +8,7 @@ MODEL:
 
 DATASET:
   NAME          : RailSem19                                          # dataset name to be trained with (camvid, cityscapes, ade20k)
-  ROOT          : 'data/RailSem19'                                   # dataset root path
+  ROOT          : '/shared/rtis_lab/data/RailSem19/custom_split/'                                   # dataset root path
   IGNORE_LABEL  : 255
 
 TRAIN:
